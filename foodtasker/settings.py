@@ -80,15 +80,19 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'foodtasker.wsgi.application'
-
+WSGI_APPLICATION = 'nutries.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME':   'nutries_prod',
+        'USER': 'nutries',
+        'PASSWORD': 'classics6^',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
