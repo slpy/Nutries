@@ -80,7 +80,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'foodtasker.wsgi.application'
-WSGI_APPLICATION = 'nutries.wsgi.application'
+
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
@@ -148,7 +148,7 @@ DATABASES['default'].update(db_from_env)
 AUTHENTICATION_BACKENDS = (
    
    'social.backends.facebook.FacebookOAuth2',
-   'rest_framework_social_oauth2.backends.DjangoOAuth2',
+  'rest_framework_social_oauth2.backends.DjangoOAuth2',
    'django.contrib.auth.backends.ModelBackend',
 
 )
