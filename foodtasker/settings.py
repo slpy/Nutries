@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'foodtasker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':   'nutries_prod',
+        'NAME':   'nutries',
         'USER': 'nutries',
         'PASSWORD': 'classics6^',
         'HOST': 'localhost',
