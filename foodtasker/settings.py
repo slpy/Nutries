@@ -90,7 +90,7 @@ DATABASES = {
         'NAME':   'nutries',
         'USER': 'nutries',
         'PASSWORD': 'classics6^',
-        'HOST': '159.203.23.40',
+        'HOST': 'http://159.203.23.40/',
         'PORT': '',
     }
 }
