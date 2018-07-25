@@ -1,0 +1,800 @@
+[2018-07-25 08:32:54 +0000] [1925] [DEBUG] Current configuration:
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f8b5e9dc8c0>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f8b5e9dc5f0>
+  pre_fork: <function pre_fork at 0x7f8b5e9dc758>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/nutries/Nutries/logs/access_logs
+  group: 1002
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 3
+  proc_name: None
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f8b5e9dc488>
+  pre_exec: <function pre_exec at 0x7f8b5e9dce60>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f8b5e9dca28>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f8b5e9e4578>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f8b5e9e4050>
+  post_request: <function post_request at 0x7f8b5e9e4140>
+  user: 1001
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f8b5e9dcb90>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f8b5e9e42a8>
+  chdir: /home/nutries/Nutries
+  paste: None
+  default_proc_name: foodtasker.wsgi:application
+  errorlog: /home/nutries/Nutries/logs/error_logs
+  loglevel: debug
+  capture_output: False
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f8b5e9dc320>
+  worker_abort: <function worker_abort at 0x7f8b5e9dccf8>
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f8b5e9e4410>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2018-07-25 08:32:54 +0000] [1925] [INFO] Starting gunicorn 19.6.0
+[2018-07-25 08:32:54 +0000] [1925] [DEBUG] Arbiter booted
+[2018-07-25 08:32:54 +0000] [1925] [INFO] Listening at: http://127.0.0.1:8000 (1925)
+[2018-07-25 08:32:54 +0000] [1925] [INFO] Using worker: sync
+[2018-07-25 08:32:54 +0000] [1946] [INFO] Booting worker with pid: 1946
+[2018-07-25 08:32:54 +0000] [1947] [INFO] Booting worker with pid: 1947
+[2018-07-25 08:32:54 +0000] [1956] [INFO] Booting worker with pid: 1956
+[2018-07-25 08:32:55 +0000] [1925] [DEBUG] 3 workers
+[2018-07-25 09:04:18 +0000] [1956] [DEBUG] GET /
+[2018-07-25 09:04:18 +0000] [1946] [DEBUG] GET /restaurant/
+[2018-07-25 09:04:19 +0000] [1956] [DEBUG] GET /restaurant/sign-in/
+[2018-07-25 09:04:19 +0000] [1947] [DEBUG] GET /static/css/bootstrap.min.css
+[2018-07-25 09:04:19 +0000] [1956] [DEBUG] GET /static/js/bootstrap.min.js
+[2018-07-25 09:04:19 +0000] [1947] [DEBUG] GET /static/css/style.css
+[2018-07-25 09:04:20 +0000] [1947] [DEBUG] GET /favicon.ico
+[2018-07-25 09:04:30 +0000] [1946] [DEBUG] GET /admin
+[2018-07-25 09:04:30 +0000] [1956] [DEBUG] GET /admin/
+[2018-07-25 09:04:30 +0000] [1946] [DEBUG] GET /admin/login/
+[2018-07-25 09:04:30 +0000] [1956] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:04:30 +0000] [1947] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 09:04:31 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:04:31 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:04:31 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:04:37 +0000] [1946] [DEBUG] POST /admin/login/
+[2018-07-25 09:04:37 +0000] [1947] [DEBUG] GET /admin/
+[2018-07-25 09:04:38 +0000] [1956] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:04:38 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:04:38 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:04:38 +0000] [1956] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:04:38 +0000] [1956] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:04:38 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:04:38 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:04:38 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:05:07 +0000] [1956] [DEBUG] GET /admin/oauth2_provider/
+[2018-07-25 09:05:07 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:05:07 +0000] [1947] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:05:07 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:05:07 +0000] [1947] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:05:07 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:05:07 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:05:07 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:05:07 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:05:14 +0000] [1956] [DEBUG] GET /admin/
+[2018-07-25 09:05:14 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:05:14 +0000] [1947] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:05:15 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:05:15 +0000] [1946] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:05:15 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:05:15 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:05:15 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:05:15 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:05:18 +0000] [1956] [DEBUG] GET /admin/logout/
+[2018-07-25 09:05:19 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:05:19 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:05:19 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:05:19 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:05:21 +0000] [1946] [DEBUG] GET /admin/
+[2018-07-25 09:05:21 +0000] [1947] [DEBUG] GET /admin/login/
+[2018-07-25 09:05:21 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:05:21 +0000] [1947] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 09:05:21 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:05:22 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:05:22 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:05:44 +0000] [1956] [DEBUG] GET /admin/login/
+[2018-07-25 09:05:44 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:05:44 +0000] [1947] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 09:05:44 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:05:44 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:05:44 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:05:57 +0000] [1956] [DEBUG] POST /admin/login/
+[2018-07-25 09:05:58 +0000] [1946] [DEBUG] GET /admin/
+[2018-07-25 09:05:58 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:05:58 +0000] [1947] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:05:58 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:05:58 +0000] [1946] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:05:58 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:05:58 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:05:58 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:05:58 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:06:04 +0000] [1947] [DEBUG] GET /admin/auth/group/
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 09:06:05 +0000] [1956] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 09:06:05 +0000] [1947] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 09:06:05 +0000] [1947] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/img/search.svg
+[2018-07-25 09:06:05 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:06:07 +0000] [1946] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 09:06:07 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:06:07 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:06:07 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:06:09 +0000] [1946] [DEBUG] GET /admin/
+[2018-07-25 09:06:09 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:06:09 +0000] [1947] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:06:09 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:06:09 +0000] [1946] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:06:09 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:06:09 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:06:09 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:06:09 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:06:32 +0000] [1947] [DEBUG] GET /admin/foodtaskerapp/customer/
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 09:06:32 +0000] [1946] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 09:06:32 +0000] [1956] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 09:06:32 +0000] [1946] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 09:06:33 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:06:33 +0000] [1956] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 09:06:33 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:06:33 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:06:33 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:06:35 +0000] [1956] [DEBUG] GET /admin/
+[2018-07-25 09:06:36 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:06:36 +0000] [1946] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:06:36 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:06:36 +0000] [1947] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:06:36 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:06:36 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:06:36 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:06:36 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:10:44 +0000] [1947] [DEBUG] GET /admin/logout/
+[2018-07-25 09:10:44 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:10:44 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:10:44 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:10:44 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:10:47 +0000] [1956] [DEBUG] GET /admin/
+[2018-07-25 09:10:47 +0000] [1946] [DEBUG] GET /admin/login/
+[2018-07-25 09:10:47 +0000] [1956] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:10:47 +0000] [1956] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 09:10:47 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:10:47 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:10:47 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:10:54 +0000] [1956] [DEBUG] POST /admin/login/
+[2018-07-25 09:10:54 +0000] [1947] [DEBUG] GET /admin/
+[2018-07-25 09:10:54 +0000] [1946] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:10:54 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:10:54 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:10:54 +0000] [1956] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:10:54 +0000] [1946] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:10:54 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:10:54 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:10:54 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:11:09 +0000] [1946] [DEBUG] GET /admin/logout/
+[2018-07-25 09:11:09 +0000] [1956] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:11:09 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:11:09 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:11:09 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:11:12 +0000] [1947] [DEBUG] GET /admin/
+[2018-07-25 09:11:12 +0000] [1946] [DEBUG] GET /admin/login/
+[2018-07-25 09:11:12 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:11:12 +0000] [1947] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 09:11:12 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:11:12 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:11:12 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:12:12 +0000] [1956] [DEBUG] GET /admin/login/
+[2018-07-25 09:12:12 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:12:12 +0000] [1946] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 09:12:12 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:12:13 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:12:13 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:14 +0000] [1946] [DEBUG] POST /admin/login/
+[2018-07-25 09:13:14 +0000] [1946] [DEBUG] GET /admin/
+[2018-07-25 09:13:15 +0000] [1956] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:15 +0000] [1947] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:13:15 +0000] [1956] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:15 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:13:15 +0000] [1947] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:13:15 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:15 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:13:15 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:18 +0000] [1956] [DEBUG] GET /admin/auth/group/
+[2018-07-25 09:13:18 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:18 +0000] [1947] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 09:13:18 +0000] [1947] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 09:13:18 +0000] [1946] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 09:13:18 +0000] [1946] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 09:13:19 +0000] [1956] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 09:13:19 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:19 +0000] [1947] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 09:13:19 +0000] [1947] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 09:13:19 +0000] [1946] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 09:13:19 +0000] [1956] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 09:13:19 +0000] [1947] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 09:13:19 +0000] [1946] [DEBUG] GET /static/admin/img/search.svg
+[2018-07-25 09:13:21 +0000] [1946] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 09:13:21 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:21 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:13:21 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:23 +0000] [1956] [DEBUG] GET /admin/
+[2018-07-25 09:13:23 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:23 +0000] [1956] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:13:23 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:23 +0000] [1947] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:13:23 +0000] [1947] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:13:23 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:23 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:23 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:13:25 +0000] [1956] [DEBUG] GET /admin/oauth2_provider/refreshtoken/
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:26 +0000] [1946] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:13:26 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:26 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:28 +0000] [1947] [DEBUG] GET /admin/
+[2018-07-25 09:13:29 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:29 +0000] [1956] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:13:29 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:29 +0000] [1956] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:13:29 +0000] [1956] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:13:29 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:13:29 +0000] [1947] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:29 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:34 +0000] [1947] [DEBUG] GET /admin/oauth2_provider/refreshtoken/
+[2018-07-25 09:13:34 +0000] [1946] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:34 +0000] [1956] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 09:13:34 +0000] [1956] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 09:13:34 +0000] [1946] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 09:13:34 +0000] [1946] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 09:13:34 +0000] [1946] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 09:13:34 +0000] [1956] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 09:13:34 +0000] [1947] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:34 +0000] [1947] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 09:13:35 +0000] [1946] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 09:13:35 +0000] [1956] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 09:13:35 +0000] [1946] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 09:13:35 +0000] [1947] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 09:13:35 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:35 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:35 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:13:37 +0000] [1947] [DEBUG] GET /admin/
+[2018-07-25 09:13:37 +0000] [1956] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 09:13:37 +0000] [1947] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 09:13:37 +0000] [1946] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 09:13:37 +0000] [1946] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 09:13:37 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 09:13:37 +0000] [1956] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 09:13:37 +0000] [1946] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 09:13:37 +0000] [1956] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 09:16:31 +0000] [1925] [INFO] Handling signal: term
+[2018-07-25 09:16:31 +0000] [1947] [INFO] Worker exiting (pid: 1947)
+[2018-07-25 09:16:31 +0000] [1946] [INFO] Worker exiting (pid: 1946)
+[2018-07-25 09:16:31 +0000] [1956] [INFO] Worker exiting (pid: 1956)
+[2018-07-25 09:16:31 +0000] [1925] [INFO] Shutting down: Master
+[2018-07-25 18:30:11 +0000] [23445] [DEBUG] Current configuration:
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fc9f67138c0>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fc9f67135f0>
+  pre_fork: <function pre_fork at 0x7fc9f6713758>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/nutries/Nutries/logs/access_logs
+  group: 1002
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 3
+  proc_name: None
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fc9f6713488>
+  pre_exec: <function pre_exec at 0x7fc9f6713e60>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fc9f6713a28>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fc9f671b578>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fc9f671b050>
+  post_request: <function post_request at 0x7fc9f671b140>
+  user: 1001
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fc9f6713b90>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fc9f671b2a8>
+  chdir: /home/nutries/Nutries
+  paste: None
+  default_proc_name: foodtasker.wsgi:application
+  errorlog: /home/nutries/Nutries/logs/error_logs
+  loglevel: debug
+  capture_output: False
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fc9f6713320>
+  worker_abort: <function worker_abort at 0x7fc9f6713cf8>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fc9f671b410>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2018-07-25 18:30:11 +0000] [23445] [INFO] Starting gunicorn 19.6.0
+[2018-07-25 18:30:11 +0000] [23445] [DEBUG] Arbiter booted
+[2018-07-25 18:30:11 +0000] [23445] [INFO] Listening at: http://0.0.0.0:8000 (23445)
+[2018-07-25 18:30:11 +0000] [23445] [INFO] Using worker: sync
+[2018-07-25 18:30:11 +0000] [23450] [INFO] Booting worker with pid: 23450
+[2018-07-25 18:30:11 +0000] [23451] [INFO] Booting worker with pid: 23451
+[2018-07-25 18:30:11 +0000] [23460] [INFO] Booting worker with pid: 23460
+[2018-07-25 18:30:11 +0000] [23445] [DEBUG] 3 workers
+[2018-07-25 18:50:33 +0000] [23450] [DEBUG] GET /admin/oauth2_provider/accesstoken/
+[2018-07-25 18:50:33 +0000] [23450] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 18:50:33 +0000] [23451] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 18:50:33 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 18:50:33 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 18:50:33 +0000] [23460] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 18:50:33 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 18:50:33 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:20:16 +0000] [23450] [DEBUG] GET /admin/login/
+[2018-07-25 19:20:16 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:20:16 +0000] [23460] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:20:16 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:20:16 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:20:16 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:20:26 +0000] [23460] [DEBUG] POST /admin/login/
+[2018-07-25 19:20:26 +0000] [23451] [DEBUG] GET /admin/
+[2018-07-25 19:20:27 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:20:27 +0000] [23460] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:20:27 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:20:27 +0000] [23450] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:20:27 +0000] [23460] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:20:27 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:20:27 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:20:27 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:20:34 +0000] [23460] [DEBUG] GET /admin/logout/
+[2018-07-25 19:20:35 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:20:35 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:20:35 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:20:35 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:20:57 +0000] [23460] [DEBUG] GET /admin/
+[2018-07-25 19:20:57 +0000] [23450] [DEBUG] GET /admin/login/
+[2018-07-25 19:20:57 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:20:57 +0000] [23451] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:20:57 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:20:57 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:20:57 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:22:40 +0000] [23451] [DEBUG] GET /admin/login/
+[2018-07-25 19:22:40 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:22:40 +0000] [23451] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:22:41 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:22:41 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:22:41 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:22:42 +0000] [23451] [DEBUG] GET /favicon.ico
+[2018-07-25 19:22:47 +0000] [23451] [DEBUG] GET /admin/login/
+[2018-07-25 19:22:48 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:22:48 +0000] [23450] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:22:48 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:22:49 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:22:49 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:22:57 +0000] [23451] [DEBUG] POST /admin/login/
+[2018-07-25 19:22:57 +0000] [23451] [DEBUG] GET /admin/
+[2018-07-25 19:22:58 +0000] [23450] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:22:58 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:22:58 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:22:59 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:22:59 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:22:59 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:22:59 +0000] [23451] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:22:59 +0000] [23451] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:23:00 +0000] [23460] [DEBUG] Ignored premature client disconnection. No more data after: '\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03IK\x13\xbd\x1f}\x00\xa6\xc6_?N\x83\xed].n:/)\xbfu\x94\x00\xc6w>\x86\xf8\x95\x8d\xf5 w\xd7\x08\xbc\x91g\x90Jrk\x89\x8c\x94\xa9v\x06\x1a\x9a\x8evl\x9d\x150\xdb\xf1u\xf6m\x08h\xf3\x00"\xda\xda\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x00\n\x01\x00\x01\x91::\x00\x00\xff\x01\x00\x01\x00\x00\x00\x00\x1b\x00\x19\x00\x00\x16nutries.foodstation.ca\x00\x17\x00\x00\x00#\x00\x00\x00\r\x00\x14\x00\x12\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x02\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1uP\x00\x00\x00\x0b\x00\x02\x01\x00\x003\x00+\x00)**\x00\x01\x00\x00\x1d\x00 \x93<Eg\xdb\x95,O]\xda\xcb+\x7f\x93\xfb\x87,\x92\xa1Z\xd1\xdb\xce\x07;\x18\xb5\xfb\x86@t\x19\x00-\x00\x02\x01\x01\x00+\x00\x0b\n\x1a\x1a\x7f\x17\x03\x03\x03\x02\x03\x01\x00\n\x00\n\x00\x08**\x00\x1d\x00\x17\x00\x18\xba\xba\x00\x01\x00\x00\x15\x00\xc5\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+[2018-07-25 19:23:02 +0000] [23460] [DEBUG] GET /admin/auth/group/
+[2018-07-25 19:23:02 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:02 +0000] [23460] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 19:23:02 +0000] [23450] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 19:23:02 +0000] [23451] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 19:23:02 +0000] [23451] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 19:23:02 +0000] [23460] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 19:23:03 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:03 +0000] [23451] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 19:23:03 +0000] [23451] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 19:23:03 +0000] [23451] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 19:23:03 +0000] [23450] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 19:23:03 +0000] [23450] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 19:23:03 +0000] [23451] [DEBUG] GET /static/admin/img/search.svg
+[2018-07-25 19:23:04 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:04 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:04 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:04 +0000] [23460] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 19:23:16 +0000] [23451] [DEBUG] GET /admin/
+[2018-07-25 19:23:17 +0000] [23460] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:23:17 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:17 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:17 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:17 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:17 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:17 +0000] [23451] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:23:17 +0000] [23460] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:23:21 +0000] [23460] [DEBUG] GET /admin/auth/user/
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 19:23:22 +0000] [23451] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 19:23:22 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:22 +0000] [23450] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 19:23:22 +0000] [23450] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:22 +0000] [23451] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 19:23:22 +0000] [23450] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 19:23:22 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:22 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:22 +0000] [23460] [DEBUG] GET /static/admin/img/search.svg
+[2018-07-25 19:23:22 +0000] [23450] [DEBUG] GET /static/admin/img/icon-yes.svg
+[2018-07-25 19:23:23 +0000] [23460] [DEBUG] GET /static/admin/img/icon-no.svg
+[2018-07-25 19:23:23 +0000] [23460] [DEBUG] GET /static/admin/img/sorting-icons.svg
+[2018-07-25 19:23:23 +0000] [23460] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 19:23:26 +0000] [23450] [DEBUG] GET /admin/auth/
+[2018-07-25 19:23:26 +0000] [23451] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:23:26 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:27 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:27 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:27 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:27 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:27 +0000] [23450] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:23:27 +0000] [23451] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:23:29 +0000] [23451] [DEBUG] GET /admin/auth/group/
+[2018-07-25 19:23:30 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:30 +0000] [23451] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 19:23:30 +0000] [23460] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 19:23:30 +0000] [23451] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 19:23:30 +0000] [23460] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 19:23:30 +0000] [23450] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 19:23:30 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:30 +0000] [23451] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 19:23:30 +0000] [23450] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 19:23:30 +0000] [23451] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 19:23:30 +0000] [23450] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 19:23:30 +0000] [23451] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 19:23:31 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:31 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:31 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:31 +0000] [23450] [DEBUG] GET /static/admin/img/search.svg
+[2018-07-25 19:23:31 +0000] [23450] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 19:23:34 +0000] [23450] [DEBUG] GET /admin/
+[2018-07-25 19:23:35 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:35 +0000] [23450] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:23:35 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:36 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:36 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:36 +0000] [23460] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:23:36 +0000] [23450] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:23:36 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:40 +0000] [23450] [DEBUG] GET /admin/oauth2_provider/accesstoken/
+[2018-07-25 19:23:41 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:41 +0000] [23460] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 19:23:41 +0000] [23451] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 19:23:41 +0000] [23460] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 19:23:41 +0000] [23450] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 19:23:41 +0000] [23450] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 19:23:41 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:41 +0000] [23451] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 19:23:41 +0000] [23450] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 19:23:41 +0000] [23460] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 19:23:41 +0000] [23450] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 19:23:41 +0000] [23451] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 19:23:41 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:42 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:42 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:42 +0000] [23450] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 19:23:44 +0000] [23460] [DEBUG] GET /admin/
+[2018-07-25 19:23:45 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:45 +0000] [23460] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:23:45 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:46 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:46 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:46 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:46 +0000] [23450] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:23:46 +0000] [23450] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:23:50 +0000] [23450] [DEBUG] GET /admin/foodtaskerapp/restaurant/
+[2018-07-25 19:23:50 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:50 +0000] [23451] [DEBUG] GET /admin/jsi18n/
+[2018-07-25 19:23:50 +0000] [23460] [DEBUG] GET /static/admin/css/changelists.css
+[2018-07-25 19:23:50 +0000] [23460] [DEBUG] GET /static/admin/js/core.js
+[2018-07-25 19:23:50 +0000] [23460] [DEBUG] GET /static/admin/js/vendor/jquery/jquery.js
+[2018-07-25 19:23:50 +0000] [23450] [DEBUG] GET /static/admin/js/jquery.init.js
+[2018-07-25 19:23:50 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:50 +0000] [23451] [DEBUG] GET /static/admin/js/admin/RelatedObjectLookups.js
+[2018-07-25 19:23:50 +0000] [23450] [DEBUG] GET /static/admin/js/actions.js
+[2018-07-25 19:23:50 +0000] [23450] [DEBUG] GET /static/admin/js/prepopulate.js
+[2018-07-25 19:23:50 +0000] [23460] [DEBUG] GET /static/admin/js/urlify.js
+[2018-07-25 19:23:50 +0000] [23460] [DEBUG] GET /static/admin/js/vendor/xregexp/xregexp.js
+[2018-07-25 19:23:51 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:51 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:51 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:51 +0000] [23451] [DEBUG] GET /static/admin/img/tooltag-add.svg
+[2018-07-25 19:23:55 +0000] [23460] [DEBUG] GET /admin/
+[2018-07-25 19:23:56 +0000] [23451] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:23:56 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:23:56 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:23:57 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:23:57 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:23:57 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:23:57 +0000] [23460] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:23:57 +0000] [23451] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:24:02 +0000] [23450] [DEBUG] GET /admin/logout/
+[2018-07-25 19:24:02 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:24:03 +0000] [23451] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:24:03 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:24:03 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:24:07 +0000] [23451] [DEBUG] GET /admin/
+[2018-07-25 19:24:08 +0000] [23450] [DEBUG] GET /admin/login/
+[2018-07-25 19:24:08 +0000] [23451] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:24:08 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:24:08 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:24:09 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:24:09 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:24:16 +0000] [23450] [DEBUG] GET /admin/login/
+[2018-07-25 19:24:16 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:24:16 +0000] [23451] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:24:16 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:24:17 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:24:17 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:25:55 +0000] [23451] [DEBUG] GET /admin/login/
+[2018-07-25 19:25:55 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:25:55 +0000] [23450] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:25:55 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:25:55 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:25:55 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:26:08 +0000] [23460] [DEBUG] POST /admin/login/
+[2018-07-25 19:26:08 +0000] [23451] [DEBUG] GET /admin/
+[2018-07-25 19:26:09 +0000] [23450] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:26:09 +0000] [23460] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:26:09 +0000] [23450] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:26:09 +0000] [23450] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:26:09 +0000] [23460] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:26:09 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:26:09 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:26:09 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:27:09 +0000] [23450] [DEBUG] POST /api/social/convert-token/
+[2018-07-25 19:29:06 +0000] [23460] [DEBUG] POST /api/social/convert-token/
+[2018-07-25 19:29:10 +0000] [23450] [DEBUG] POST /api/social/revoke-token/
+[2018-07-25 19:30:51 +0000] [23451] [DEBUG] POST /api/social/convert-token/
+[2018-07-25 19:31:48 +0000] [23451] [DEBUG] POST /api/social/convert-token/
+[2018-07-25 19:32:27 +0000] [23450] [DEBUG] GET /admin/
+[2018-07-25 19:32:28 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:32:28 +0000] [23460] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:32:28 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:32:28 +0000] [23451] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:32:28 +0000] [23451] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:32:28 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:32:28 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
+[2018-07-25 19:32:28 +0000] [23451] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:32:33 +0000] [23451] [DEBUG] GET /admin/logout/
+[2018-07-25 19:32:34 +0000] [23460] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:32:34 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:32:34 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:32:34 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:32:36 +0000] [23451] [DEBUG] GET /admin/
+[2018-07-25 19:32:37 +0000] [23451] [DEBUG] GET /admin/login/
+[2018-07-25 19:32:37 +0000] [23451] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:32:37 +0000] [23460] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:32:37 +0000] [23460] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:32:38 +0000] [23460] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:32:38 +0000] [23450] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:33:51 +0000] [23450] [DEBUG] POST /api/social/convert-token/
+[2018-07-25 19:34:24 +0000] [23445] [INFO] Handling signal: term
+[2018-07-25 19:34:24 +0000] [23450] [INFO] Worker exiting (pid: 23450)
+[2018-07-25 19:34:24 +0000] [23451] [INFO] Worker exiting (pid: 23451)
+[2018-07-25 19:34:24 +0000] [23460] [INFO] Worker exiting (pid: 23460)
+[2018-07-25 19:34:24 +0000] [23445] [INFO] Shutting down: Master
+[2018-07-25 19:39:04 +0000] [24554] [DEBUG] Current configuration:
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f04b477b8c0>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f04b477b5f0>
+  pre_fork: <function pre_fork at 0x7f04b477b758>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/nutries/Nutries/logs/access_logs
+  group: 1002
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 3
+  proc_name: None
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f04b477b488>
+  pre_exec: <function pre_exec at 0x7f04b477be60>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f04b477ba28>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f04b4783578>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f04b4783050>
+  post_request: <function post_request at 0x7f04b4783140>
+  user: 1001
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f04b477bb90>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f04b47832a8>
+  chdir: /home/nutries/Nutries
+  paste: None
+  default_proc_name: foodtasker.wsgi:application
+  errorlog: /home/nutries/Nutries/logs/error_logs
+  loglevel: debug
+  capture_output: False
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f04b477b320>
+  worker_abort: <function worker_abort at 0x7f04b477bcf8>
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f04b4783410>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2018-07-25 19:39:04 +0000] [24554] [INFO] Starting gunicorn 19.6.0
+[2018-07-25 19:39:04 +0000] [24554] [DEBUG] Arbiter booted
+[2018-07-25 19:39:04 +0000] [24554] [INFO] Listening at: http://127.0.0.1:8000 (24554)
+[2018-07-25 19:39:04 +0000] [24554] [INFO] Using worker: sync
+[2018-07-25 19:39:04 +0000] [24559] [INFO] Booting worker with pid: 24559
+[2018-07-25 19:39:04 +0000] [24564] [INFO] Booting worker with pid: 24564
+[2018-07-25 19:39:04 +0000] [24569] [INFO] Booting worker with pid: 24569
+[2018-07-25 19:39:05 +0000] [24554] [DEBUG] 3 workers
+[2018-07-25 19:41:10 +0000] [24559] [DEBUG] GET /admin/login/
+[2018-07-25 19:41:11 +0000] [24569] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:41:11 +0000] [24564] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:41:11 +0000] [24564] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:41:11 +0000] [24564] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:41:11 +0000] [24564] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:41:16 +0000] [24569] [DEBUG] GET /admin/login/
+[2018-07-25 19:41:16 +0000] [24564] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:41:16 +0000] [24564] [DEBUG] GET /static/admin/css/login.css
+[2018-07-25 19:41:16 +0000] [24559] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:41:17 +0000] [24564] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:41:17 +0000] [24559] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:41:25 +0000] [24564] [DEBUG] POST /admin/login/
+[2018-07-25 19:41:25 +0000] [24569] [DEBUG] GET /admin/
+[2018-07-25 19:41:25 +0000] [24564] [DEBUG] GET /static/admin/css/base.css
+[2018-07-25 19:41:25 +0000] [24564] [DEBUG] GET /static/admin/css/dashboard.css
+[2018-07-25 19:41:26 +0000] [24559] [DEBUG] GET /static/admin/css/fonts.css
+[2018-07-25 19:41:26 +0000] [24564] [DEBUG] GET /static/admin/img/icon-changelink.svg
+[2018-07-25 19:41:26 +0000] [24564] [DEBUG] GET /static/admin/img/icon-addlink.svg
+[2018-07-25 19:41:26 +0000] [24559] [DEBUG] GET /static/admin/fonts/Roboto-Light-webfont.woff
+[2018-07-25 19:41:26 +0000] [24564] [DEBUG] GET /static/admin/fonts/Roboto-Regular-webfont.woff
+[2018-07-25 19:41:26 +0000] [24559] [DEBUG] GET /static/admin/fonts/Roboto-Bold-webfont.woff
