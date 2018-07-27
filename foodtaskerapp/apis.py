@@ -62,7 +62,7 @@ def customer_add_order(request):
         customer = access_token.user.customer
 
         # Get Stripe token
-        stripe_token = request.POST["stripe_token"]
+        stripe_token = request.POST.get["stripe_token"]
 
         # Check whether customer has any order that is not delivered
         if Order.objects.filter(customer = customer).exclude(status = Order.DELIVERED):
