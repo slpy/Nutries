@@ -182,5 +182,5 @@ SOCIAL_AUTH_PIPELINE = (
 STRIPE_API_KEY = 'pk_test_TzmriQ9QwXMJRD9iJB1mUbLX'
 
 #sk_test_BQokikJOvBiI2HlWgH4olfQ2
-:x
+
 
