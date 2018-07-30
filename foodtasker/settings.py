@@ -183,4 +183,3 @@ STRIPE_API_KEY = 'sk_test_9hvI2vj72wmIrHUviKuhd2ze'
 
 #sk_test_BQokikJOvBiI2HlWgH4olfQ2
 
-
