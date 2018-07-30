@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from decimal import Decimal
 from django.utils import timezone
 
 # Create your models here.
@@ -38,7 +37,7 @@ class Meal(models.Model):
     name = models.CharField(max_length=500)
     short_description = models.CharField(max_length=500)
     image = models.ImageField(upload_to='meal_images/', blank=False)
-    price = models.FloatField(default=0.00)
+    price = models.PositiveIntegerField(default=(0)
 
 
     
