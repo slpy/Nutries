@@ -174,8 +174,8 @@ def driver_pick_order(request):
         driver = access_token.user.driver
 
         # Check if driver can only pick up one order at the same time
-        #if Order.objects.filter(driver = driver).exclude(status = Order.ONTHEWAY):
-        #   return JsonResponse({"status": "failed", "error": "You can only pick one order at the same time."})
+        if Order.objects.filter(driver = driver).exclude(status = Order.DELIVERED):
+           return JsonResponse({"status": "failed", "error": "You can only pick one order at the same time."})
 
         try:
             order = Order.objects.get(
