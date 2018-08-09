@@ -86,7 +86,7 @@ def customer_add_order(request):
                 amount = order_total * 100, # Amount in cents
                 currency = "usd",
                 source = stripe_token,
-                description = "Nutries Order"
+                description = "FoodTasker Order"
             )
 
             if charge.status != "failed":
@@ -111,6 +111,7 @@ def customer_add_order(request):
                 return JsonResponse({"status": "success"})
             else:
                 return JsonResponse({"status": "failed", "error": "Failed connect to Stripe."})
+
 
 
 
@@ -173,8 +174,13 @@ def driver_pick_order(request):
         driver = access_token.user.driver
 
         # Check if driver can only pick up one order at the same time
+<<<<<<< HEAD
         if Order.objects.filter(driver = driver).exclude(status = Order.DELIVERED):
            return JsonResponse({"status": "failed", "error": "You can only pick one order at the same time."})
+=======
+        if Order.objects.filter(driver = driver).exclude(status = Order.ONTHEWAY):
+            return JsonResponse({"status": "failed", "error": "You can only pick one order at the same time."})
+>>>>>>> b7d49f2e73aa7649d875103fc20428953881d476
 
         try:
             order = Order.objects.get(
