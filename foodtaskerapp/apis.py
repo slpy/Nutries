@@ -131,7 +131,7 @@ def customer_driver_location(request):
     customer = access_token.user.customer
 
     # Get driver's location related to this customer's current order.
-    current_order = Order.objects.filter(customer = customer, status = Order.DELIVERED).last()
+    current_order = Order.objects.filter(customer = customer, status = Order.ONTHEWAY).last()
     location = current_order.driver.location
 
     return JsonResponse({"location": location})
@@ -174,7 +174,7 @@ def driver_pick_order(request):
         driver = access_token.user.driver
 
         # Check if driver can only pick up one order at the same time
-        if Order.objects.filter(driver = driver).exclude(status = Order.ONTHEWAY):
+        if Order.objects.filter(driver = driver).exclude(status = Order.DELIVERED):
             return JsonResponse({"status": "failed", "error": "You can only pick one order at the same time."})
 
         try:
