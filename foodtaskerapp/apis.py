@@ -1,5 +1,5 @@
-import json
 
+<<<<<<< HEAD
 from django.utils import timezone
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -263,3 +263,5 @@ def driver_update_location(request):
         driver.save()
 
         return JsonResponse({"status": "success"})
+=======
+>>>>>>> 0dfd216a3657f7f35ebfd70014d5565889c99595
