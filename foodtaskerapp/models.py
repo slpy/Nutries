@@ -39,7 +39,6 @@ class Meal(models.Model):
     image = models.ImageField(upload_to='meal_images/', blank=False)
     price = models.IntegerField(default=0)
 
-
     def __str__(self):
         return self.name
 
