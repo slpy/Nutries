@@ -179,7 +179,7 @@ SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.user.user_details',
 )
 
-STRIPE_API_KEY = 'sk_test_9hvI2vj72wmIrHUviKuhd2ze'
+STRIPE_API_KEY = 'sk_test_8B1r4qXPL9I5yiLLCI2fCQ49'
 
 #sk_test_BQokikJOvBiI2HlWgH4olfQ2
 
