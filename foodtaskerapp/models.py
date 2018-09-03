@@ -37,7 +37,7 @@ class Meal(models.Model):
     name = models.CharField(max_length=500)
     short_description = models.CharField(max_length=500)
     image = models.ImageField(upload_to='meal_images/', blank=False)
-    price = models.DecimalField(blank=True, null=True, max_digits=10, decimal_places=2)
+    price = models.BigIntegerField(blank=True, null=True, max_digits=10, decimal_places=2)
 
     def __str__(self):
         return self.name
@@ -59,7 +59,7 @@ class Order(models.Model):
     restaurant = models.ForeignKey(Restaurant)
     driver = models.ForeignKey(Driver, blank = True, null = True)
     address = models.CharField(max_length=500)
-    total = models.DecimalField(blank=True, null=True, max_digits=10, decimal_places=2)
+    total = models.BigIntegerField(blank=True, null=True, max_digits=10, decimal_places=2)
     status = models.IntegerField(choices = STATUS_CHOICES)
     created_at = models.DateTimeField(default = timezone.now)
     picked_at = models.DateTimeField(blank = True, null = True)
@@ -72,7 +72,7 @@ class OrderDetails(models.Model):
     order = models.ForeignKey(Order, related_name='order_details')
     meal = models.ForeignKey(Meal)
     quantity = models.IntegerField()
-    sub_total = models.DecimalField(blank=True, null=True, max_digits=10, decimal_places=2)
+    sub_total = models.BigIntegerField(blank=True, null=True, max_digits=10, decimal_places=2)
 
     def __str__(self):
         return str(self.id)
