@@ -71,7 +71,7 @@ class Order(models.Model):
 class OrderDetails(models.Model):
     order = models.ForeignKey(Order, related_name='order_details')
     meal = models.ForeignKey(Meal)
-    quantity = models.FloatFields()
+    quantity = models.FloatField()
     sub_total = models.FloatField()
 
     def __str__(self):
