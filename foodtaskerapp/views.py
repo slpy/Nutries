@@ -60,11 +60,7 @@ def restaurant_add_meal(request):
 @login_required(login_url='/restaurant/sign-in/')
 def restaurant_edit_meal(request, meal_id):
     form = MealForm(instance = Meal.objects.get(id = meal_id))
-<<<<<<< HEAD
     form.fields['image'].required = False
-=======
-    
->>>>>>> ce2957e99ce63d130229915b4a290e0adde58b9c
 
     if request.method == "POST":
         form = MealForm(request.POST, request.FILES, instance = Meal.objects.get(id = meal_id))
