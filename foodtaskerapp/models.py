@@ -36,7 +36,7 @@ class Meal(models.Model):
     restaurant = models.ForeignKey(Restaurant)
     name = models.CharField(max_length=500)
     short_description = models.CharField(max_length=500)
-    image = models.ImageField(upload_to='meal_images/', blank=False)
+    image = models.ImageField(upload_to='meal_images/')
     price = models.FloatField()
     
     def __str__(self):
