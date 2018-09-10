@@ -37,12 +37,7 @@ class Meal(models.Model):
     name = models.CharField(max_length=500)
     short_description = models.CharField(max_length=500)
     image = models.ImageField(upload_to='meal_images/', blank=False)
-    price = models.DecimalField(default=0, blank=False, null=False, max_digits=10, decimal_places=2)
-    
-  
-        
-    
-        
+    price = models.DecimalField(default=0, blank=False, null=False, max_digits=10, decimal_places=2)    
     
     def __str__(self):
         return self.name
