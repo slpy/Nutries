@@ -37,7 +37,7 @@ class Meal(models.Model):
     name = models.CharField(max_length=500)
     short_description = models.CharField(max_length=500)
     image = models.ImageField(upload_to='meal_images/', blank=False)
-    price = models.DecimalField(blank=False, null=False, max_digits=10, decimal_places=2)
+    price = models.IntegerField(default=0)
         
     
         
@@ -74,8 +74,8 @@ class Order(models.Model):
 class OrderDetails(models.Model):
     order = models.ForeignKey(Order, related_name='order_details')
     meal = models.ForeignKey(Meal)
-    quantity = models.IntegerField()
-    sub_total = models.FloatField()
+    quantity = models.IntegerField(default=0)
+    sub_total = models.FloatField(default=0)
 
     def __str__(self):
         return str(self.id)
