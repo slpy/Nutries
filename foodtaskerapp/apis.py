@@ -84,7 +84,7 @@ def customer_add_order(request):
             # Step 1: Create a charge: this will charge customer's card
             charge = stripe.Charge.create(
                 amount = order_total * 100, # Amount in cents
-                currency = "usd",
+                currency = "CAD",
                 source = stripe_token,
                 description = "Nutries Order"
             )
