@@ -37,7 +37,7 @@ class Meal(models.Model):
     name = models.CharField(max_length=500)
     short_description = models.CharField(max_length=500)
     image = models.ImageField(upload_to='meal_images/', blank=False)
-    price = models.FloatField(default=0)
+    price = models.IntegerField(default=0)
     
     def __str__(self):
         return self.name
@@ -59,7 +59,7 @@ class Order(models.Model):
     restaurant = models.ForeignKey(Restaurant)
     driver = models.ForeignKey(Driver, blank = True, null = True)
     address = models.CharField(max_length=500)
-    total = models.FloatField(default=0)
+    total = models.IntegerField(default=0)
     status = models.IntegerField(choices = STATUS_CHOICES)
     created_at = models.DateTimeField(default = timezone.now)
     picked_at = models.DateTimeField(blank = True, null = True)
